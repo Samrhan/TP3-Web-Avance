@@ -27,7 +27,7 @@ module.exports = {
     dayOfMonth: function () {
       let tab = [];
       for (let i = 0; i < new Date(this.year, this.month, 0).getDate(); i++) {
-        tab.push(`${getDay(this.year, this.month - 1, i + 1)} ${i + 1} ;`);
+        tab.push(`${getDay(this.year, this.month - 1, i + 1)} ${i + 1} ; `);
       }
       if (this.day)
         for(let i of this.day){
