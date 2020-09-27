@@ -18,15 +18,15 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+    <title>TP3</title>
 
 </head>
 <body>
 <div id="app">
-
     <hello-world></hello-world>
-    <days-of-month :month="month" :year="year"></days-of-month>
+    <days-of-year v-for="y in years" :year="y"></days-of-year>
     <hello-other-world></hello-other-world>
 </div>
-<script src="/vue-application.js"></script>
+<script src="./vue-application.js"></script>
 </body>
 </html>

@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ca75f3c-bd95-429c-8348-7d604c3b84c0" name="Default Changelist" comment="" />
+    <list default="true" id="7ca75f3c-bd95-429c-8348-7d604c3b84c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/client/components/daysOfYear.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/daysOfMonth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/daysOfMonth.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/vue-application.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vue-application.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
   <component name="ProjectId" id="1i6M3PsUQXxnajEfR8GBEMdw0nw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601223388496</updated>
-      <workItem from="1601223389527" duration="7253000" />
+      <workItem from="1601223389527" duration="12263000" />
     </task>
     <servers />
   </component>
@@ -59,5 +70,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601223430194" />
+    <state x="800" y="417" key="Github.ShareDialog" timestamp="1601230725892">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="800" y="417" key="Github.ShareDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601230725892" />
+    <state x="714" y="224" key="Github.UntrackedFilesDialog" timestamp="1601230753343">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="714" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601230753343" />
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601233074048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601233074048" />
   </component>
 </project>
