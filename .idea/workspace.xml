@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ca75f3c-bd95-429c-8348-7d604c3b84c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client/components/daysOfYear.vue" afterDir="false" />
+    <list default="true" id="7ca75f3c-bd95-429c-8348-7d604c3b84c0" name="Default Changelist" comment="Exo 3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/components/daysOfMonth.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/daysOfMonth.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/components/daysOfYear.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/components/daysOfYear.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/vue-application.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/vue-application.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,12 +57,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601223388496</updated>
-      <workItem from="1601223389527" duration="12263000" />
+      <workItem from="1601223389527" duration="16142000" />
     </task>
+    <task id="LOCAL-00001" summary="Exo 3">
+      <created>1601237441079</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601237441079</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Exo 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exo 3" />
   </component>
   <component name="WindowStateProjectService">
     <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601223430194">
@@ -78,6 +89,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="714" y="224" key="Github.UntrackedFilesDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601230753343" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1601237457658">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601237457658" />
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1601233074048">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

@@ -15,7 +15,6 @@ const years = [];
 for (let i = 2010; i < 2021; i++) {
     years.push(i)
 }
-console.log(years)
 var app = new Vue({
     el: '#app',
     data: {

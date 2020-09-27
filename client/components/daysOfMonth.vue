@@ -1,38 +1,38 @@
 <template>
   <div id="daysofmonth">
-      <div class="card cardmonth">
-        <div class="card-body">
-          <h5 class="card-title">{{ months[month-1] }}</h5>
-          <p class="card-text">
-            <a v-for="i in dayOfMonth()">{{ i }} </a></p>
-        </div>
+    <div class="card cardmonth">
+      <div class="card-body">
+        <h5 class="card-title">{{ months[month - 1] }}</h5>
+        <p class="card-text">
+          <a v-for="i in dayOfMonth()" v-bind:style="{fontWeight:`${i.startsWith(' ')?'bold':'regular'}`}">{{ i }} </a></p>
       </div>
+    </div>
   </div>
 </template>
 
 <script>
-const years = [];
-for (let i = 2020; i > 1899; i--) {
-  years.push(i)
-}
 
 module.exports = {
   props: {
     month: Number,
-    year: Number
+    year: Number,
+    day: Array
   },
   data: function () {
     return {
       months: ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"],
-      years: years
     }
   },
   methods: {
     dayOfMonth: function () {
       let tab = [];
       for (let i = 0; i < new Date(this.year, this.month, 0).getDate(); i++) {
-        tab.push(`${getDay(this.year, this.month-1, i + 1)} ${i + 1} ;`);
+        tab.push(`${getDay(this.year, this.month - 1, i + 1)} ${i + 1} ;`);
       }
+      if (this.day)
+        for(let i of this.day){
+          tab[parseInt(i.date.substr(8,2))-1] = ' '+i.nom+' '+tab[parseInt(i.date.substr(8,2))-1];
+        }
       return tab;
     }
   }
