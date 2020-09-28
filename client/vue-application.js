@@ -12,7 +12,9 @@ let HelloWorld = Vue.component('hello-world', {
 })
 
 const routes = [
+    {path: '/', redirect:'/days/2020'},
     {path: '/days/:year', component: dayComponent, name: 'days'},
+    {path: '/days/:year/:month', component: dayComponent, name: 'month'},
     {path: '/hello-world', component: HelloWorld}
 
 ]

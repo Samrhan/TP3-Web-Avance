@@ -1,7 +1,7 @@
 <template>
   <div id="daysofmonth">
     <div class="card cardmonth">
-      <div class="card-body">
+      <div class="card-body" v-on:click="navigateMonth()">
         <h5 class="card-title">{{ months[month - 1] }}</h5>
         <p class="card-text">
           <!-- Nous permet d'afficher les jours en gras ou non. La technique utilisé est un peu tricky,
@@ -42,6 +42,13 @@ module.exports = {
           tab[parseInt(i.date.substr(8, 2)) - 1] = ' ' + i.nom + ' ' + tab[parseInt(i.date.substr(8, 2)) - 1];
         }
       return tab;
+    },
+    navigateMonth(){
+      if(!this.$route.params.month)
+        router.replace({
+          name: 'month', params: {year:this.$route.params.year, month:this.month}
+        })
+
     }
   }
 }
