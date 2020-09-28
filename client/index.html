@@ -8,7 +8,6 @@
     <script src="http://npmcdn.com/vue-router/dist/vue-router.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
@@ -18,15 +17,64 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
             integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
             crossorigin="anonymous"></script>
+    <style>
+        .scrollable-menu {
+            height: auto;
+            max-height: 180px;
+            overflow-x: hidden;
+        }
+
+        .scrollable-menu::-webkit-scrollbar {
+            -webkit-appearance: none;
+            width: 4px;
+        }
+
+        .scrollable-menu::-webkit-scrollbar-thumb {
+            border-radius: 3px;
+            background-color: lightgray;
+            -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .75);
+        }
+    </style>
     <title>TP3</title>
 
 </head>
 <body>
 <div id="app">
-    <hello-world></hello-world>
-    <days-of-year v-for="y in years" :year="y"></days-of-year>
-    <hello-other-world></hello-other-world>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">TP3</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <router-link to="/days/2020">Jours de l'année</router-link>
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <router-link to="/hello-world">Hello World</router-link>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropDownYear" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
+                            {{ $route.params.year || '2020' }}
+                        </button>
+                        <div class="dropdown-menu scrollable-menu" aria-labelledby="dropDownYear">
+                            <a class="dropdown-item" href=# v-for="y in years" v-on:click="navigate(y)">{{ y }}</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <router-view></router-view>
 </div>
-<script src="./vue-application.js"></script>
+<script src="vue-application.js"></script>
 </body>
 </html>

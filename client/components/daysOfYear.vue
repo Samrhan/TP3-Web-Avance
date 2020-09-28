@@ -28,14 +28,17 @@ module.exports = {
     }
   },
   methods:{
+    //on récupère les jours férié de l'année passée en props
     getDates: function (){
       fetch(`http://vps-4401e6e0.vps.ovh.net/api/v2/PublicHolidays/${this.year}/FR`)
       .then(res=>res.json())
       .then(json=>{
         json.forEach(date=> {
+          //On crée un tableau d'objet contenant les jours férié d'un mois.
           let month = new Date(date.date).getMonth()
           if(!this.ferie[month])
             this.ferie[month] = [];
+          // On ajoute ce qui nous interesse
           this.ferie[new Date(date.date).getMonth()].push({date: date.date, nom: date.localName})
         })
         this.done = true
